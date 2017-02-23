@@ -37,7 +37,7 @@ map.on('load', function() {
         'type': 'fill-extrusion',
         'minzoom': 15,
         'paint': {
-            'fill-extrusion-color': '#F9AA38',
+            'fill-extrusion-color': '#FD8639',
             'fill-extrusion-height': {
                 'type': 'identity',
                 'property': 'height'
@@ -46,14 +46,14 @@ map.on('load', function() {
                 'type': 'identity',
                 'property': 'min_height'
             },
-            'fill-extrusion-opacity': .6
+            'fill-extrusion-opacity': .85
         }
     });
 });
 
 var popup = new mapboxgl.Popup({closeOnClick: false})
     .setLngLat([73.130748, 18.987359])
-    .setHTML('<h4>PUSHP VALLEY</h4>')
+    .setHTML('<h4>I am here...</h4>')
     .addTo(map);
 </script>
 
