@@ -17,7 +17,7 @@
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2Fpa2F0LTIxIiwiYSI6ImNpdDJucTJocTAwYngyenBkMWRjN2UyMGoifQ.DiBcaXH9Ig_CLPSmq8WplA';
 var map = new mapboxgl.Map({
-    style: 'mapbox://styles/saikat-21/cjhhmmugr020n2sns5rnrsa4q',
+    style: 'mapbox://styles/saikat-21/cj6kdg0jk71xk2rp82bep6qrx',
     center: [73.1254, 18.9889],
     zoom: 16,
     pitch: 45,
@@ -37,7 +37,7 @@ map.on('load', function() {
         'type': 'fill-extrusion',
         'minzoom': 15,
         'paint': {
-            'fill-extrusion-color': '#FD8639',
+            'fill-extrusion-color': '#dbdbe6',
             'fill-extrusion-height': {
                 'type': 'identity',
                 'property': 'height'
@@ -46,14 +46,14 @@ map.on('load', function() {
                 'type': 'identity',
                 'property': 'min_height'
             },
-            'fill-extrusion-opacity': .85
+            'fill-extrusion-opacity': .75
         }
     });
 });
 
 var popup = new mapboxgl.Popup({closeOnClick: false})
     .setLngLat([73.12548011474311, 18.988967068958626])
-    .setHTML('<h4>I am here...</h4>')
+    .setHTML('<h4>Home</h4>')
     .addTo(map);
 </script>
 
